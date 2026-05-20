@@ -2,6 +2,18 @@
 Useful Excel User-Designed Functions for Quantitative Analysis and Chemical Equilibrium
 
 ---------------------------------
+How to cite this work
+---------------------------------
+
+> Boland, N. E. (2026). *QuantFunctions* (Version 1.7) [Software].
+> https://github.com/neboland/QuantFunctions https://doi.org/10.5281/zenodo.20314935
+
+[![DOI](https://zenodo.org/badge/1244882780.svg)](https://doi.org/10.5281/zenodo.20314935)
+
+See [`CITATION.cff`](CITATION.cff) for machine-readable citation metadata, including
+references to the foundational programs and methods that AqSpeciate builds upon.
+
+---------------------------------
 Instructions
 ---------------------------------
 Install all files from this folder to the same location on your harddrive. 
@@ -14,18 +26,15 @@ Authors:
 ---------------------------------
 ChemQuantFunctions.xla was compiled by Nathan Boland<bolandne@whitman.edu>. It contains the following Macros:
 
-	1. QuantFunctions is designed and developed by Nathan Boland<bolandne@whitman.edu>
+	1. QuantFunctions is designed and developed by Nathan Boland<bolandne@whitman.edu> [![DOI](https://zenodo.org/badge/1244882780.svg)](https://doi.org/10.5281/zenodo.20314935)
 
-	2. MacroBundle12 is designed and developed by Robert deLevie<rdelevie@bowdoin.edu> 
-		https://learn.bowdoin.edu/excellaneous/
+	2. MacroBundle12 is designed and developed by Robert deLevie<rdelevie@bowdoin.edu> https://learn.bowdoin.edu/excellaneous/
 
 	3. MaxwellStatsUncertaintyPackage is designed and developed by Maxwell Brown ('20), Whitman College
 
 	4. RubsamenYumibePackage is designed and developed by Michael Rubsamen ('22) and Lauren Yumibe ('22), Whitman College
 
-	4. EngCel is designed and developed by Thomas Michael Wallace
-<thomasmichaelwallace@googlemail.com> 
-		https://github.com/thomasmichaelwallace/EngCel/
+	4. EngCel is designed and developed by Thomas Michael Wallace <thomasmichaelwallace@googlemail.com> https://github.com/thomasmichaelwallace/EngCel/
 
 ---------------------------------
 FILES
