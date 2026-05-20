@@ -1,0 +1,72 @@
+---------------------------------
+QuantFunctions:
+---------------------------------
+QuantFunctions - Excel Functions for Quantitative Analysis and Chemical Equilibrium.
+Copyright (C) 2018 Nathan Edward Boland, Whitman College, WA, USA 
+https://www.whitman.edu/academics/departments-and-programs/chemistry/chemistry-faculty-and-staff/nathan-boland
+
+Quantfunctions is free software:  you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+Quantfunctions is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with ChemQuantFunctions.  If not, see <http://www.gnu.org/licenses/>.
+
+
+The following functions are included.
+
+Function	Description								Parameters							
+F()		Returns Faraday's Constant in C/mol *					none							
+e()		Returns the elementary charge in C *					none							
+k()		Returns Boltzmann's constant  in J/K *					none							
+H()		Returns Planck's constant in J*s *					none							
+GasJ()		Returns the Gas constant in J/(mol*K) *					none							
+GasLatm()	Returns the Gas constant in L*atm /(mol*K) *				none						
+Avogadro()	Returns Avogadro's number *						none							
+QUADRATIC()	Returns the two x values from solving the quadratic equation 
+		(a*x^2 + bx + c = 0) as a 1x2 array.					coefficients a, b, c							
+DAVIESG()	Returns the activity coefficient (gamma) calculated using Davies
+		 Equation where a = 0.50886 by default (for water at 25 deg. C) and 
+		b = 0.3 by default (as recommended by Hering and Morel 1993 and is 
+		used by Harris), temp = 25 deg. C by (Used for 
+		correcting the A coefficient according to a regression of data from 
+		Helgeson/Kirham (25-225 deg C) and Harned/Owen (0-25 deg C))**		I = ionic strength, 
+											Z = charge , 
+											optional a, 
+											optional b,
+											optional temp							
+GINV()		Returns the critical Grubbs value for a dataset (2 tail). This  
+		value can be used to determine whether a given data point in a  
+		dataset is an outlier. The value is the number of standard deviations  
+		away fromthe mean at which point values are considered outliers.***	alpha (default 0.05 = 95% confidence), 
+											N (number of samples), 
+											tails (number of tails)			
+				
+AlphaFrac()	Returns the fractional compositions (alpha) for an weak acid or base  
+		species at a given pH and protonation level and pKas.			pH, 
+											Hlevel (protonation level of the species), 
+											pKaArray (array of pKas in accending order down a column)	
+						
+SciExp()	Returns number in text scientific notation format (for labels). 
+		Can provide 3(default) to 1 sig figs.					Expon (number you wish to convert), 
+											Optional SigFig (3(default) to 1)							
+UncInX()	Returns the uncertainty in an unknown X value determined from a 
+		calibration curve and a measured Y value using Equation 4.27 from 
+		Quantititave Chemical Analysis 9th Ed. by Daniel C. Harris. ****	y (average unknown Y value), 
+											k (number of measurements of Y), 
+											m (slope of the calibration curve), 
+											s_y (standard error in Y - obtained from Linest), 
+											rangex (range of X values used in calibration curve), 
+											rangey (range of Y values obtained from calibration curve)											
+
+* 	Source: 2014 CODATA Values from http://physics.nist.gov/cuu/constants/index.html (Accessed August 2018)
+**	Source: W. Stumm and J. J. Morgan, Aquatic Chemistry: Chemical Equilibria and Rates in Natural Waters, John Wiley & Sons, Inc., New York, NY, 3rd edn., 1996
+***	Source: http://www.itl.nist.gov/div898/handbook/eda/section3/eda35h1.htm
+****	Source: Harris, D. C.; Quantitative Chemical Analysis, 9th ed.; W.H. Freeman and Company: New York, 2016
+

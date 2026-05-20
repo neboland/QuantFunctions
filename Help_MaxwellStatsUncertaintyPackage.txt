@@ -1,0 +1,65 @@
+---------------------------------
+MaxwellStatsUncertaintyPackage:
+---------------------------------
+MaxwellStatsUncertaintyPackage - An Excel Macro Package for Quantitative Analysis and Chemical Equilibrium.
+Mostly for the purposes of propagating error and sig figs without doing it by hand every time.
+(Also includes a few statistical tests I implemented during unit 1, but I don't use those frequently now.)
+Created Fall 2019 for Chem 310 at Whitman College by Maxwell Brown ('19)
+Copyright (C) 2019 Maxwell Brown ('21), Whitman College, WA, USA
+and included beginning in ChemQuantFunctions.xlam Version 1.5 Copyright (C) 2020 Nathan E. Boland, Whitman College, WA, USA
+https://www.whitman.edu/academics/departments-and-programs/chemistry/chemistry-faculty-and-staff/nathan-boland
+
+MaxwellStatsUncertaintyPackage (and ChemQuantFunctions.xlam) is free software:  you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+MaxwellStatsUncertaintyPackage is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with ChemQuantFunctions.  If not, see <http://www.gnu.org/licenses/>.
+
+
+The following Macros are included.
+
+Macro			Description							
+format_with_error	Format a value and uncertainty according to the real rules for reporting sig figs.
+			Treats the selected cell as the value and the cell to its right as the uncertainty.
+			Currently, the exponential form doesn't take into account reporting an additional
+			sig fig if the first digit is 1, but the decimal form does do this.
+			
+format_exponent_with_error
+			Works just like format_with_error but tries to use exponential notation universally.
+
+f_test			Performs an F-test by prompting you for the confidence level, standard deviations, and D.F.
+			The conclusion is put relative to the currently selected cell.
+
+confidence_interval	Creates a confidence interval by prompting for the mean/stddev, confidence level, and sample size.
+
+grubbs_test		Performs the grubbs test for outliers by prompting for information about the data set.
+			produces Grubb's test values to the right of a column of data and then a second column of non-excluded data points.
+
+sum_with_error		Performs the summation of any number of cells and ranges (both positive and negative terms).
+			You can select multiple cells by ctrl-clicking when the prompts pop up.
+			Press escape to skip a step if you don't need to include positive or negative terms.
+			Each cell you select should be a VALUE and have an uncertainty in the cell directly to its right.
+			The result is placed where your selection was when you ran the macro.
+			(All of the macros below work with these same mechanics.)
+
+product_with_error	Works the same way as sum with error, but performs a product with numerator terms.
+			Denominators not implemented yet, but if you include every term as if it were a
+			part of the numerator, the value formula can be adjusted pretty easily to do division
+			and the error term will reflect the correctly propagated result without further editing.
+
+power_with_error	Performs the power of a base and exponent where there is no error in the exponent (ie x^a).
+
+exp_with_error		Performs e^x where x is an exponent with associated error.
+
+exp10_with_error	Performs 10^x where x is an exponent with associated error.
+
+log_with_error		Performs the common logarithm log10(x) where x is an antilogarithm with associated error.
+
+ln_with_error		Performs the natural logarithm ln(x) where x is an antilogarithm with associated error.

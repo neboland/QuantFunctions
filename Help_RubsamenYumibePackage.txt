@@ -1,0 +1,62 @@
+---------------------------------
+RubsamenYumibePackage:
+---------------------------------
+RubsamenYumibePackage - An Excel Macro Package for Quantitative Analysis and Chemical Equilibrium.
+Created Fall 2020 for Chem 310 at Whitman College by Michael Rubsamen ('22) and Lauren Yumibe ('22)
+Copyright (C) Michael Rubsamen ('22) and Lauren Yumibe ('22), Whitman College, WA, USA
+and included beginning in ChemQuantFunctions.xlam Version 1.6 Copyright (C) 2020 Nathan E. Boland, Whitman College, WA, USA
+https://www.whitman.edu/academics/departments-and-programs/chemistry/chemistry-faculty-and-staff/nathan-boland
+
+RubsamenYumibePackage (and ChemQuantFunctions.xlam) is free software:  you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+RubsamenYumibePackage is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with ChemQuantFunctions.  If not, see <http://www.gnu.org/licenses/>.
+
+
+The following Macros are included.
+
+Macro			Description							
+Kw()			Returns value of water dissociation constant, Kw = 10 ^ -13.997
+
+pKw()			Returns value of negative log of water dissociation constant, pKw = 13.997
+
+Kw_equil()		Returns Kw equilibrium expression: Kw = [H+][OH-]
+
+Ka_generic()		Returns generic Ka equibrium expression for H+ and A-
+
+volflask_unc(flask_vol)	Returns the uncertainty of a Class A volumetric flask. Source: Daniel C Harris 
+			Quantitative Chemical Analysis, 9th Ed. Table 2-3
+
+Fixed_transfer_pipette(pipette)
+			Returns the uncertainty of a transfer pipette of a given volume (in uL). Source: 
+			Daniel C Harris Quantitative Chemical Analysis, 9th Ed. Table 2-4
+
+Fixed_micro_pipette(pipette)
+			Returns the uncertainty of a micropipette of a given volume (in uL). Source: 
+			Daniel C Harris Quantitative Chemical Analysis, 9th Ed. Table 2-5
+
+water_density(temp_C)	Returns the density of water at a given temperature (in deg. C). Source: Daniel 
+			C Harris Quantitative Chemical Analysis, 9th Ed. Table 2-7
+
+temp_dependent_Kw(temp_C)
+			Returns Kw value at a given temperature (in deg. C). Source: Daniel C Harris 
+			Quantitative Chemical Analysis, 9th Ed. Table 6-1
+
+temp_dependent_pKw(temp_C)
+			Returns pKw value at a given temperature (in deg. C). Source: Daniel C Harris 
+			Quantitative Chemical Analysis, 9th Ed. Table 6-1
+
+Conf_Interval(prob, std, df)
+			Returns the confidence interval for a given probability (prob), standard deviation (std)
+			and degrees of freedom (df).
+
+
+
