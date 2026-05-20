@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Boland"
+  given-names: "Nathan"
+  orcid: "https://orcid.org/0000-0002-0485-6768"
+title: "QuantFunctions"
+version: 1.7.0
+doi: 10.5281/zenodo.20314935
+date-released: 2026-05-20
+url: "https://github.com/neboland/QuantFunctions"
