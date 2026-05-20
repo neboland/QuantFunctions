@@ -57,6 +57,9 @@ FILES
 
 -EngCelREADME.md
 	Help file contents for EngCel addin functions.
+	
+-QuantFunctionsV1.7.bas
+	Excel VBA Import code. In Excel, open Visual Basic in Editor, navigate to workbook and import this file to add macro module.
 
 -ReadMeFirst.txt
 	This file. Description of contents of ChemQuantFunctions.xlam
