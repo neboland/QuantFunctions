@@ -4,6 +4,15 @@ authors:
 - family-names: "Boland"
   given-names: "Nathan"
   orcid: "https://orcid.org/0000-0002-0485-6768"
+- family-names: "Rubsamen"
+  given-names: "Michael"
+  orcid: "https://orcid.org/0000-0003-1697-7708"
+- family-names: "Yumibe"
+  given-names: "Lauren"
+- family-names: "Brown"
+  given-names: "Maxwell"
+- family-names: "Blakely"
+  given-names: "Mark"
 title: "QuantFunctions"
 version: 1.7.0
 doi: 10.5281/zenodo.20314935
